@@ -1,0 +1,121 @@
+---
+import { Picture } from "@astrojs/image/components";
+import Dash from "../assets/dashboard.png";
+import Chart from "../assets/chart.png";
+import Payment from "../assets/payment.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon";
+
+const sliderContent = [
+  {
+    icon: "ph:codesandbox-logo-thin",
+    category: "Marketing / Automation",
+    title: "Moonshot Plan",
+    paragraph:
+      "Complete website + marketing management at a fixed price, pause anytime. Accounts managed by a real marketing expert, with experience managing over $18m in ad spend and global marketing strategies.",
+    btntxt: "Purchase",
+    price: "4445",
+    style: "outline",
+    link: "https://buy.stripe.com/7sIeWtdTB6df676eVc",
+  }
+]
+---
+
+
+
+<style>
+  .carousel-cell { padding: 10px 20px; }
+
+  /* Glass-card effect dial in, needs a moving background css only if possible */
+  #glass-card {
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    padding: 40px 20px;
+    transition-duration: 200ms;
+  }
+  #glass-card:hover {
+    box-shadow: 0 15px 20px #00000010, 0 15px 20px #00000010;;
+  }
+  
+  [astro-icon="bgIcon"] {
+        color: #a600ff10;
+        /* OR */
+        fill: #a600ff10;
+  }
+</style>
+
+
+<main class="my-32 md:my-16">
+<div id="heroSection" class="flex flex-col lg:flex-row justify-center items-center">
+  
+  <div id="leftContainer" class="w-full lg:w-3/5 px-4 md:px-8">
+
+    <div class="py-6">
+      <h2 style="heroTagline" class="text-2xl md:text-3xl lg:text-5xl w-full font-bold tracking-tight">
+        Join the Moonshot Plan,<br/>
+        6/10 places available.
+      </h2>
+      <p class="text-sm lg:text-lg mt-6 pr-8 text-slate-700 w-full lg:max-w-3xl">
+        Complete website + marketing management at a fixed price, pause anytime. 
+        Serious account management and fast-moving optimisation by a real expert you can trust, 
+        $18m+ in managed ad spend. 10+ years web design experience. 6+ years marketing experience.
+      </p>
+      
+      <div class="mt-12 flex flex-col sm:flex-row gap-3">
+        <a href="https://g2ok5807scs.typeform.com/to/tCmzlDza" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-black text-white hover:bg-gray-800 border-2 border-transparent flex gap-1 items-center justify-center">
+          <svg viewBox="0 0 24 24" class="w-4 h-4">
+            <Icon class="text-white" name="ph:chat-teardrop-dots-light" />
+          </svg>
+
+          Book a call
+
+        </a>
+        <a href="https://aidxn.com/moonshot-plan/" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center">
+          <svg viewBox="0 0 24 24" class="w-4 h-4">
+            <Icon class="text-black" name="ph:planet-light" />
+          </svg>
+          
+          More info
+
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div id="rightContainer" class="w-full lg:w-2/5 px-4 md:px-8 z-5">
+
+
+    <div class="w-full h-full">
+      { sliderContent.map((item) => (
+        <div id="glass-card" class="carousel-cell w-full px-8 py-32">
+          <div id="slideContainer" class="flex flex-col gap-y-4">
+            <Icon name="bgIcon" class="h-16 w-16" name={item.icon} />
+            <div id="textContainer" class="w-full flex flex-col gap-y-4">
+              <span class="text-gray-700 mr-3 font-thin uppercase text-md">{item.category}</span>
+              <h3 class="font-semibold text-lg md:text-xl lg:text-2xl">{item.title}</h3>{" "}
+              <p class="text-xs lg:sm max-w-3xl font-regular text-slate-500 pr-8 leading-relaxed">{item.paragraph}</p>
+              <p class="text-xl lg:text-3xl font-semibold text-black cursor-auto my-3">${item.price}<span class="text-lg lg:text-2xl font-normal">/mth</span></p>
+              <p class="text-slate-500 mt-8 leading-relaxed">
+                <Link 
+                  class="mr-4"
+                  href={item.link || "#"}
+                  block
+                  style={item.style ? "primary" : "outline"}>
+                  {item.btntxt || "Get Started"}
+                </Link>
+              </p>
+            </div>
+          </div>
+        </div>
+        ))
+      }
+    </div>
+
+
+  </div>
+</div>
+
+</main>
