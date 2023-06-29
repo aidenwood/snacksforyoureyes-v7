@@ -23,17 +23,17 @@ import { Icon } from "astro-icon";
 <main class="my-8 md:my-16">
   <div id="heroSection" class="flex flex-col-reverse md:flex-row items-center mb-8">
     
-    <div class="w-full">
+    <div class="w-full md:w-3/5 lg:w-4/5">
 
-      <div id="glassCard" class="text-center">
+      <div id="glassCard">
         <h1 style="heroTagline" class="text-3xl md:text-6xl lg:text-7xl xl:text-8xl w-full pt-4 md:pt-8 md:pr-2 lg:pr-4 font-bold tracking-tighter">
           Feeding eyes around Australia.
         </h1>
-        <p class="mx-auto text-sm lg:text-lg mt-6 text-slate-700 w-full lg:max-w-3xl">
+        <p class="text-sm lg:text-lg mt-6 text-slate-700 w-full lg:max-w-3xl">
           Gold Coast based professional photographer, Jordan Pavey. Capturing brands vibrantly and covering live events.
           <wbr>
         </p>
-        <div class="max-w-3xl mx-auto mt-12 flex flex-col sm:flex-row justify-center gap-3">
+        <div class="mt-12 flex flex-col sm:flex-row gap-3">
           
           <a href="/contact" rel="noopener" class="rounded text-center transition focus-visible:ring-2 ring-offset-2 ring-gray-200 px-5 py-2.5 bg-white border-2 border-black hover:bg-gray-100 text-black flex gap-1 items-center justify-center">
             <svg viewBox="0 0 24 24" class="w-4 h-4">
@@ -55,6 +55,27 @@ import { Icon } from "astro-icon";
 
         </div>
       </div>
+    </div>
+    <div class="w-1/2 md:w-2/5 lg:w-1/5 block">
+      <div id="animationWrapper" translate="no">
+        <svg viewBox="-500 -500 1000 1000" class="w-full">
+          <circle r="450"></circle>
+          <circle class="equator" r="450"></circle>
+          <circle class="meridian" r="450" style="--start:165deg; --end:180deg"></circle>
+          <circle class="meridian" r="450" style="--start:150deg; --end:165deg"></circle>
+          <circle class="meridian" r="450" style="--start:135deg; --end:150deg"></circle>
+          <circle class="meridian" r="450" style="--start:120deg; --end:135deg"></circle>
+          <circle class="meridian" r="450" style="--start:105deg; --end:120deg"></circle>
+          <circle class="meridian" r="450" style="--start:90deg; --end:105deg"></circle>
+          <circle class="meridian" r="450" style="--start:75deg; --end:90deg"></circle>
+          <circle class="meridian" r="450" style="--start:60deg; --end:75deg"></circle>
+          <circle class="meridian" r="450" style="--start:45deg; --end:60deg"></circle>
+          <circle class="meridian" r="450" style="--start:30deg; --end:45deg"></circle>
+          <circle class="meridian" r="450" style="--start:15deg; --end:30deg"></circle>
+          <circle class="meridian" r="450" style="--start:0deg; --end:15deg"></circle>
+        </svg>
+      </div>
+
     </div>
   </div>
 </main>
