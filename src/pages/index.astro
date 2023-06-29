@@ -3,7 +3,6 @@ import ContainerFW from "@components/container-fullwidth.astro";
 import ContainerXL from "@components/container-xl.astro";
 import Container from "@components/container.astro";
 import Hero from "@components/hero.astro";
-import Grid from "@components/hero-grid-services.astro";
 import HeroSecondary from "@components/sectionmid-slider-cases.astro";
 import Clients from "@components/sectionmid-grid-clients.astro";
 import { Picture } from "@astrojs/image/components";
@@ -11,7 +10,7 @@ import SectionHeadImg from "@components/sectionhead-img.astro";
 import MoonshotSectionmid from "@components/sectionmid-singleproduct-moonshot.astro";
 import VelocitySectionmid from "@components/sectionmid-singleproduct-velocity.astro";
 import MoonshotCover from '../assets/backgrounds/cubed.webp';
-import VelocityCover from '../assets/backgrounds/balance.webp';
+import WeddingCover from '../assets/snacks/weddings/weddings-1.webp';
 import Cta from "@components/cta.astro";
 import ProductSlider from "@components/slider-lrg-services-main.astro";
 import BlogSlider from "@components/slider-content.astro";
@@ -22,11 +21,12 @@ import Layout from "@layouts/Layout.astro";
 <Layout title="Home">
   <ContainerFW>
     <Hero />
-    <Grid />
+    <ProductSlider />
   </ContainerFW>
   <ContainerXL>
-    <HeroSecondary />
+    
     <Clients />
+    
     <SectionHeadImg>
       <Fragment slot="title">
         Streamlined management for success.
@@ -57,17 +57,14 @@ import Layout from "@layouts/Layout.astro";
 
     <SectionHeadImg>
       <Fragment slot="title">
-        Velocity7, our high-performance theme.
+        Capturing moments forever.
       </Fragment>
       <Fragment slot="desc">
-        Over our 10 years in web design we have obsessed over website performance. It seriously matters and makes 
-        competing in any industry a breeze. Then came along the era of website builders and Wordpress. Although they can be 
-        helpful, they will quickly leave your business trapped with their bloat. A blend between low-code and custom code. 
-        High-performance code, high-converting design packed into one theme. Pay once, own forever. Infinitely extendable.
+        I like to bring an mordern artistic approach to my wedding photograhy, styles inspired by the 90's and landscapes. Available to book <a class="italic" href="/contact">here</a>.
       </Fragment>
       <Fragment slot="cover">
         <Picture
-                  src={VelocityCover}
+                  src={WeddingCover}
                   sizes="(max-width: 2000px) 2000px, 1000px"
                   widths={[1000, 1500, 2000]}
                   aspectRatio="3:2"
@@ -80,11 +77,11 @@ import Layout from "@layouts/Layout.astro";
     </SectionHeadImg>
 
     <VelocitySectionmid />
-    <Logos />
+    
 
   </ContainerXl>
   <ContainerFW>
-    <ProductSlider />
+    
     <BlogSlider />
   </ContainerFW>
   <Container>
