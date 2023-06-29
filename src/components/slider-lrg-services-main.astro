@@ -4,15 +4,23 @@ import { Icon } from "astro-icon";
 import Link from "@components/ui/link.astro";
 import { Picture } from "@astrojs/image/components";
 
-import Mos1 from '../assets/snacks/events/mos-1.webp';
+import Events1 from '../assets/snacks/events/events-1.webp';
+import Events2 from '../assets/snacks/events/events-1.webp';
+import Events3 from '../assets/snacks/events/mos-1.webp';
+
+import Portraits1 from '../assets/snacks/portraits/portraits-1.webp';
+
 import Weddings1 from '../assets/snacks/weddings/weddings-1.webp';
 import Weddings2 from '../assets/snacks/weddings/weddings-2.webp';
+import Weddings3 from '../assets/snacks/weddings/weddings-3.webp';
+import Weddings4 from '../assets/snacks/weddings/weddings-4.webp';
+
 
 const services = [
   {
     title: "Brookes @ Mo's Clubhouse",
-    category: "Event Photography",
-    imgsrc: Mos1,
+    category: "Events",
+    imgsrc: Events1,
     imgalt: "Gold Coast event photography.",
     
     style: "outline",
@@ -21,26 +29,81 @@ const services = [
     btnlink: "/events",
   },
   {
-    title: "June @ Mo's Clubhouse",
-    category: "Event Photography",
+    title: "Brookes @ Mo's Clubhouse",
+    category: "Events",
+    imgsrc: Events2,
+    imgalt: "Gold Coast event photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/events",
+  },
+  {
+    title: "Brookes @ Mo's Clubhouse",
+    category: "Events",
+    imgsrc: Events3,
+    imgalt: "Gold Coast event photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/events",
+  },
+  {
+    title: "Her Portrait Photoshoot",
+    category: "Events",
+    imgsrc: Portraits1,
+    imgalt: "Gold Coast portrait photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/portraits",
+  },
+  {
+    title: "June's @ Rose Estate",
+    category: "Weddings",
     imgsrc: Weddings1,
-    imgalt: "Gold Coast event photography.",
+    imgalt: "Gold Coast wedding photography.",
     
     style: "outline",
     btntxt: "More",
     
-    btnlink: "/events",
+    btnlink: "/weddings",
   },
   {
-    title: "June @ Mo's Clubhouse",
+    title: "June's @ Rose Estate",
     category: "Event Photography",
     imgsrc: Weddings2,
-    imgalt: "Gold Coast event photography.",
+    imgalt: "Gold Coast wedding photography.",
     
     style: "outline",
     btntxt: "More",
     
-    btnlink: "/events",
+    btnlink: "/weddings",
+  },
+  {
+    title: "June's @ Rose Estate",
+    category: "Event Photography",
+    imgsrc: Weddings3,
+    imgalt: "Gold Coast wedding photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/weddings",
+  },
+  {
+    title: "June's @ Rose Estate",
+    category: "Event Photography",
+    imgsrc: Weddings4,
+    imgalt: "Gold Coast wedding photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/weddings",
   },
 ];
 ---
