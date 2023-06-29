@@ -10,7 +10,9 @@ export default defineConfig({
   site: 'https://aidxn.com',
   integrations: [tailwind(
     {
-      config: "./tailwind.config.js",
+      config: {
+        applyBaseStyles: false,
+      },
     } [sitemap()],
   ), image({
     serviceEntryPoint: "@astrojs/image/sharp"
