@@ -16,7 +16,7 @@ const services = [
     imgalt: "Gold Coast event photography.",
     
     style: "outline",
-    btntxt: "More photos",
+    btntxt: "More",
     
     btnlink: "/events",
   },
@@ -27,7 +27,7 @@ const services = [
     imgalt: "Gold Coast event photography.",
     
     style: "outline",
-    btntxt: "More photos",
+    btntxt: "More",
     
     btnlink: "/events",
   },
@@ -38,7 +38,7 @@ const services = [
     imgalt: "Gold Coast event photography.",
     
     style: "outline",
-    btntxt: "More photos",
+    btntxt: "More",
     
     btnlink: "/events",
   },
@@ -57,6 +57,7 @@ const services = [
   .carousel-cell {
     margin: 40px 20px;
     min-height: 350px;
+    height: 66vh;
     max-height: 80vh;
   }
 
@@ -110,13 +111,13 @@ const services = [
                 />
           </div>
           <div id="textContainer" class="absolute left-4 bottom-4 w-full px-2">
-            <div class="flex gap-4 justify-center items-center">
+            <div class="flex flex-col gap-4 justify-center items-center">
               <span class="text-gray-900 uppercase text-xl">{item.category}</span>
-              <h3 id="imgTitle" class="font-semibold text-black text-2xl md:text-3xl">{item.title}</h3>
+              <h3 id="imgTitle" class="font-semibold text-black text-2xl md:text-3xl pb-4">{item.title}</h3>
               
               <div class="flex items-center">
                 
-                <div class="ml-auto">
+                <div class="ml-auto pb-2">
                   <Link 
                     onClick="onClick()"
                     class=""
