@@ -73,21 +73,16 @@ const clients = [
 
 
 ---
-<style>
-  svg{width:100%;height:100%;perspective:50px}circle{stroke:#6D00A8;stroke-width:8px;fill:none}.equator{transform:rotateZ(-20deg) rotateX(125deg)}.meridian{animation:2s linear infinite turn;transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--start))}@keyframes turn{100%{transform:rotateZ(-20deg) rotateX(35deg) rotateY(var(--end))}}
-  #heroTagline{font-size: 5vw;}
-</style>
+
 
 
 <main class="my-16 md:my-32 mx-auto">
   <div id="introContainer" class="px-4 md:px-8 pb-8">
     <h3 style="fullysickHeader" class="text-2xl md:text-3xl lg:text-5xl mb-4 font-bold lg:tracking-tight xl:tracking-tighter">
-      Trusted in the most competitive industries.
+      Photography at a more human level.
     </h3>
     <p class="text-sm lg:text-lg text-slate-700 w-full">
-      Aidxn Design has worked with some of Australia's best performing brand strategies. 
-      Through in-depth research and analysis, we help you define your brand identity, tone, and positioning, 
-      setting the stage for success in all marketing landscapes, with ease and low-churn. Strategic approaches ensure results.
+      Over 5 years experience professional photographing people, products and places. I have a passion for capturing the essence of a moment, and the people in it.
     </p>
   </div>
 
@@ -95,9 +90,9 @@ const clients = [
   {
     clients.map((logo) => (
     <div id="container" class="relative group">
-      <div id="cardOuter" class="absolute -inset-1 bg-gradient-to-br from-pink-700 to-purple-700 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
-      <div id="cardInner" class="relative bg-gray-50 hover:bg-gray-100 ring-1 ring-gray-300 rounded-lg leading-none flex items-top justify-start space-x-6">
-        <div id="imgContainer" class="hover:bg-gray-100 duration-200 w-full rounded py-2 px-4">
+      <div id="cardOuter" class="absolute -inset-1 bg-gradient-to-br from-purple-700 to-orange-700 rounded-lg blur opacity-40 group-hover:opacity-100 transition duration-200 group-hover:duration-200"></div>
+      <div id="cardInner" class="relative bg-gray-900 hover:bg-gray-700 ring-1 ring-gray-600 rounded-lg leading-none flex items-top justify-start space-x-6 duration-200 ">
+        <div id="imgContainer" class="w-full rounded py-2 px-4">
           <img src={logo.src} alt={logo.alt} class="w-full h-24 md:h-36" />
         </div>
       </div>
