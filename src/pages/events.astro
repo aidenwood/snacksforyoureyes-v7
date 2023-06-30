@@ -101,11 +101,10 @@ const pricing = [
   <ContainerFW>
     <SectionEmail>
       <Fragment slot="title">
-        Brand design + strategies for local business.
+        Gold Coast Events Photographer.
       </Fragment>
       <Fragment slot="desc">
-        Effective marketing is simply no accident, not even close. We design brands that seemlessly 
-        convert their target audience. Validated brand strategy, direction and design. Ready for global scale.
+        5+ years experience getting deep in the action. The best perspective. The best angles. The best moments.
       </Fragment>
       <Fragment slot="cover">
         <Picture
@@ -122,60 +121,9 @@ const pricing = [
     </SectionEmail>
   </ContainerFW>
 
-  <ContainerXL>
-    <SectionHeadImg>
-      <Fragment slot="title">
-        Brand direction + strategy.
-      </Fragment>
-      <Fragment slot="desc">
-        Based on the Gold Coast and redefining the way businesses can manage their brand. Come back to Earth for 
-        air and remember the good old days of freelancers you can rely on. If your office is located on the Gold Coast 
-        we come directly to you, once a month to improve the speed of development. While also always being only a click away 
-        online if you're wanting to see where our work is upto, add a revision or next task.
-      </Fragment>
-      <Fragment slot="cover">
-        <Picture
-                  src={Pagecover}
-                  sizes="(max-width: 2000px) 2000px, 1000px"
-                  widths={[1000, 1500, 2000]}
-                  aspectRatio="3:2"
-                  background="#f2f2f2"
-                  fit="cover"
-                  position="center"
-                  class="w-full rounded duration-200 hover:shadow-sm"
-                />
-      </Fragment>
-    </SectionHeadImg>
-  </ContainerXL>
-
-  <ContainerXL>
-    <SectionHeadSecImg>
-      <Fragment slot="title">
-        Cloud-based revisions.
-      </Fragment>
-      <Fragment slot="desc">
-        We know how important it is to create and revise hundreds of ideas quickly to find the best. Using cloud-based 
-        design software to share moodboards and ideas, we can quickly work together anywhere in the world, using Figma, 
-        to maintain blazing-fast, 2-day design turn arounds. Manage ideas and approvals online with Trello for complete 
-        transparency and peace of mind you're making the most of your monthly design work.
-      </Fragment>
-      <Fragment slot="cover">
-        <Picture
-                  src={PagecoverSecondary}
-                  sizes="(max-width: 2000px) 2000px, 1000px"
-                  widths={[1000, 1500, 2000]}
-                  aspectRatio="3:2"
-                  background="#f2f2f2"
-                  fit="cover"
-                  position="center"
-                  class="w-full rounded duration-200 hover:shadow-sm"
-                />
-      </Fragment>
-    </SectionHeadSecImg>
-
-    <Integrations />
-    
-  </ContainerXL>
+  <ContainerFW>
+    <GallerySlider />
+  </ContainerFW>
 
   <ContainerXL>
     <SectionTextarea>
@@ -275,8 +223,6 @@ const pricing = [
     <Cta />
   </Container>
 
-  <ContainerFW>
-    <GallerySlider />
-  </ContainerFW>
+
 
 </Layout>
