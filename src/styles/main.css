@@ -4,9 +4,9 @@
 
 @layer base {
   @font-face {
-    font-family: 'inconsolata';
+    font-family: 'PeaceNowBasic';
     font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
-    src: url('/fonts/Inconsolata-Variable.ttf') format('ttf');
+    src: url('/fonts/PeaceNowBasic.ttf') format('ttf');
   }
 }
 
