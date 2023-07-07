@@ -2,7 +2,8 @@
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Detailedfooter from "@components/detailed-footer.astro";
-import Navbar from "@components/navbar/navbar.astro";
+import Topbar from "@components/navbar/top-nav.astro";
+import Bottombar from "@components/navbar/bottom-nav.astro";
 import "@fontsource/inter/variable.css";
 import '../styles/main.css';
 
@@ -37,7 +38,7 @@ const makeTitle = title
     <!-- preload custom font -->
     <link
     rel="preload"
-    href="/fonts/PeaceNowBasic.ttf"
+    href="/fonts/HelloPlaygrund.ttf"
     as="font"
     type="font/ttf"
     crossorigin
@@ -74,8 +75,10 @@ const makeTitle = title
   </style>
   
   <body class="bg-black text-white">
-    <Navbar />
+    <Topbar />
+    <Bottombar />
     <slot />
+    
     <Detailedfooter />
     <style is:global>
       /* Improve Page speed */

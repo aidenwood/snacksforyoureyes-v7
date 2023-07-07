@@ -1,0 +1,98 @@
+---
+import ContainerSticky from "@components/container-sticky-top.astro";
+import Link from "@components/ui/link.astro";
+import Dropdown from "./dropdown.astro";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import aidxnLogo from 'assets/snacks-logo-light.svg'; 
+
+
+const menuitems = [
+  
+{
+    title: "Events",
+    path: "/events",
+  },
+  {
+    title: "Commercial",
+    path: "/Commercial",
+  },
+  {
+    title: "Portaits",
+    path: "/portraits",
+  },
+  {
+    title: "Weddings",
+    path: "/weddings",
+  },
+  
+];
+---
+
+<style>
+  #navLogo {height: 95px; margin: 5px 0px; filter: drop-shadow(2px 4px 6px #ffffff30);} 
+  @media only screen and (max-width: 1199px) {
+    #navLogo {
+      height: 60px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    #navLogo {
+      height: 45px;
+    }
+  }
+  header { background: rgba(42, 42, 42, 0.4); backdrop-filter: blur(45px); border: 2px solid rgba(42, 42, 42, 0.2); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); }
+  .dashboard-button {display: none;}
+</style>
+
+<ContainerSticky>
+  <header class="flex flex-col lg:flex-row justify-between items-center px-2 md:px-6 lg:px-8">
+    <Astronav>
+      <div class="flex w-full lg:w-auto items-center justify-between">
+        <a href="/" class="">
+          <img id="navLogo" src={aidxnLogo} alt="Aidxn Design - Code by Aiden Wood"/>
+        </a>
+        
+        <div class="block lg:hidden">
+          <MenuIcon class="w-6 h-6 pr-2 text-gray-300" />
+        </div>
+      </div>
+      <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
+        <ul class="flex flex-col lg:flex-row lg:gap-4">
+          {
+            menuitems.map((item, index) => (
+              <>
+                {item.children && (
+                  <Dropdown
+                    title={item.title}
+                    children={item.children}
+                    lastItem={index === menuitems.length - 1}
+                  />
+                )}
+
+                {!item.children && (
+                  <li>
+                    <a
+                      href={item.path}
+                      class="flex lg:px-3 py-2 text-2xl md:text-4xl text-gray-300 hover:text-gray-100"
+                    >
+                      <h2>
+                        {item.title}
+                      </h2>
+                    </a>
+                  </li>
+                )}
+              </>
+            ))
+          }
+        </ul>
+
+        <div class="lg:hidden flex items-center my-3 gap-4">
+          
+          <Link style="inverted" href="/contact" size="md" block>Contact</Link>
+        </div>
+      </MenuItems>
+    </Astronav>
+    
+  </header>
+</ContainerSticky>
+
