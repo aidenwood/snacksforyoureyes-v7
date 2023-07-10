@@ -555,7 +555,7 @@ const services = [
     Recent wedding photography work.
   </h2>
   <p class="text-lg lg:text-xl max-w-7xl mt-4 text-slate-300">
-    I love to get around events looking for the more human connection to show. Keeping shots to a less invasive angle while still feeling right in the action.
+    Weddings are one of my favourite things to photograph, showing off the beautiful day of connection and coming together to celebrate. I'd be happy to chat about how you want your day captured.
   </p>
 </div>
 
@@ -563,7 +563,8 @@ const services = [
   {
     services.map((item) => (
       <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/5 lg:w-2/5">
-          <div id="imgContainer" class="w-full">
+          <a href={item.btnlink}>
+            <div id="imgContainer" class="w-full">
             <Picture
                   src={item.imgsrc}
                   sizes="(max-width: 3600px) 3600px, 2400px, 1200px"
@@ -576,28 +577,8 @@ const services = [
                   class="w-full"
                 />
           </div>
-          <div id="textContainer" class="absolute left-4 bottom-4 w-full px-2">
-            <div class="flex flex-col gap-4 justify-center items-start">
-              <div id="glass-card">
-                <span id="imgDesc" class=" uppercase text-lg md:text-xl">{item.category}</span>
-                <h3 id="imgTitle" class="font-semibold text-xl md:text-3xl pb-4">{item.title}</h3>
-                
-                <div class="flex items-center">
-                  
-                  <div class="ml-auto pb-2">
-                    <Link 
-                      onClick="onClick()"
-                      class=""
-                      href={item.btnlink || "#"}
-                      block
-                      style={item.style ? "primary" : "outline"}>
-                      {item.btntxt || "Get Started"}
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        </a>
+      
       </div>
     ))
   }
