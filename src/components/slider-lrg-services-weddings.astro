@@ -1,0 +1,197 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+import Link from "@components/ui/link.astro";
+import { Picture } from "@astrojs/image/components";
+
+import Events1 from '../assets/snacks/events/events-1.webp';
+import Events2 from '../assets/snacks/events/events-2.webp';
+import Events3 from '../assets/snacks/events/mos-1.webp';
+
+import Portraits1 from '../assets/snacks/portraits/portraits-1.webp';
+
+import Weddings1 from '../assets/snacks/weddings/weddings-1.jpg';
+import Weddings2 from '../assets/snacks/weddings/weddings-2.jpg';
+import Weddings3 from '../assets/snacks/weddings/weddings-3.jpg';
+import Weddings4 from '../assets/snacks/weddings/weddings-4.jpg';
+import Weddings5 from '../assets/snacks/weddings/weddings-5.jpg';
+import Weddings6 from '../assets/snacks/weddings/weddings-6.jpg';
+import Weddings7 from '../assets/snacks/weddings/weddings-7.jpg';
+import Weddings8 from '../assets/snacks/weddings/weddings-8.jpg';
+import Weddings9 from '../assets/snacks/weddings/weddings-9.jpg';
+import Weddings10 from '../assets/snacks/weddings/weddings-10.jpg';
+import Weddings11 from '../assets/snacks/weddings/weddings-11.jpg';
+import Weddings12 from '../assets/snacks/weddings/weddings-12.jpg';
+import Weddings13 from '../assets/snacks/weddings/weddings-13.jpg';
+import Weddings14 from '../assets/snacks/weddings/weddings-14.jpg';
+import Weddings15 from '../assets/snacks/weddings/weddings-15.jpg';
+import Weddings16 from '../assets/snacks/weddings/weddings-16.jpg';
+import Weddings17 from '../assets/snacks/weddings/weddings-17.jpg';
+import Weddings18 from '../assets/snacks/weddings/weddings-18.jpg';
+import Weddings19 from '../assets/snacks/weddings/weddings-19.jpg';
+import Weddings20 from '../assets/snacks/weddings/weddings-20.jpg';
+import Weddings21 from '../assets/snacks/weddings/weddings-21.jpg';
+import Weddings22 from '../assets/snacks/weddings/weddings-22.jpg';
+import Weddings23 from '../assets/snacks/weddings/weddings-23.jpg';
+import Weddings24 from '../assets/snacks/weddings/weddings-24.jpg';
+import Weddings25 from '../assets/snacks/weddings/weddings-25.jpg';
+import Weddings26 from '../assets/snacks/weddings/weddings-26.jpg';
+import Weddings27 from '../assets/snacks/weddings/weddings-27.jpg';
+import Weddings28 from '../assets/snacks/weddings/weddings-28.jpg';
+import Weddings29 from '../assets/snacks/weddings/weddings-29.jpg';
+import Weddings30 from '../assets/snacks/weddings/weddings-30.jpg';
+
+
+const services = [
+  {
+    title: "Brookes @ Mo's Clubhouse",
+    category: "Events",
+    imgsrc: Weddings1,
+    imgalt: "Gold Coast event photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/events",
+  },
+  {
+    title: "Brookes @ Mo's Clubhouse",
+    category: "Events",
+    imgsrc: Weddings2,
+    imgalt: "Gold Coast event photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/events",
+  },
+  {
+    title: "Brookes @ Mo's Clubhouse",
+    category: "Events",
+    imgsrc: Weddings3,
+    imgalt: "Gold Coast event photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/events",
+  },
+  {
+    title: "Her Portrait Photoshoot",
+    category: "Events",
+    imgsrc: Weddings4,
+    imgalt: "Gold Coast portrait photography.",
+    
+    style: "outline",
+    btntxt: "More",
+    
+    btnlink: "/portraits",
+  },
+  
+];
+---
+
+<!-- Flickity -->
+<!-- CSS -->
+<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" media="screen">
+<!-- JavaScript -->
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- Flickity Custom Styles -->
+<style>
+
+  .carousel-cell {
+    margin: 40px 20px;
+    height: 600px;
+  }
+
+  /* Start Flickity viewport safeguards V3 */
+  main { max-width: 100%; }
+  .blog-carousel, .flickity-viewport { max-width: 100vw !important; margin: 0 auto; min-height: fit-content; }
+  /* End Flickity viewport safeguards V3 */
+  .services-carousel { margin: 20px auto; }
+
+
+  /* Glass-card effect dial in, minimal */
+  #glass-card {
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 40px; padding: 40px 20px;
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition-duration: 200ms;
+  }
+  #glass-card:hover {
+    box-shadow: 0 15px 20px #00000010, 0 15px 20px #00000010;
+  }
+
+  #imgTitle, #imgDesc { color: black; mix-blend-mode: difference; }
+
+  </style>
+
+<main class="my-8 md:my-16">
+<div class="mb-8">
+  <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold lg:tracking-tight">
+    Professional photography with taste.
+  </h2>
+  <p class="text-lg lg:text-xl max-w-7xl mt-4 text-slate-300">
+    I love to get around events looking for the more human connection to show. Keeping shots to a less invasive angle while still feeling right in the action.
+  </p>
+</div>
+
+<div id="sliderContainer" class="services-carousel h-fit pb-4">
+  {
+    services.map((item) => (
+      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/5 lg:w-2/5">
+          <div id="imgContainer" class="w-full">
+            <Picture
+                  src={item.imgsrc}
+                  sizes="(max-width: 3600px) 3600px, 2400px, 1200px"
+                  widths={[1200, 2400, 3600]}
+                  aspectRatio="16:9"
+                  loading="eager"
+                  background="#f2f2f200"
+                  fit="cover"
+                  position="center"
+                  class="w-full"
+                />
+          </div>
+          <div id="textContainer" class="absolute left-4 bottom-4 w-full px-2">
+            <div class="flex flex-col gap-4 justify-center items-start">
+              <div id="glass-card">
+                <span id="imgDesc" class=" uppercase text-lg md:text-xl">{item.category}</span>
+                <h3 id="imgTitle" class="font-semibold text-xl md:text-3xl pb-4">{item.title}</h3>
+                
+                <div class="flex items-center">
+                  
+                  <div class="ml-auto pb-2">
+                    <Link 
+                      onClick="onClick()"
+                      class=""
+                      href={item.btnlink || "#"}
+                      block
+                      style={item.style ? "primary" : "outline"}>
+                      {item.btntxt || "Get Started"}
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    ))
+  }
+</div>
+</main>
+
+<script>
+  // element argument can be a selector string
+  //   for an individual element
+  var flkty = new Flickity( '.services-carousel', {
+  cellAlign: 'center',
+  contain: true,
+  freeScroll: true,
+  imagesLoaded: true,  
+  adaptiveHeight: true,
+  });
+</script>

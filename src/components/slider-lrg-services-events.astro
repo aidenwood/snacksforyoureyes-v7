@@ -76,9 +76,7 @@ const services = [
 
   .carousel-cell {
     margin: 40px 20px;
-    height: 65vh;
-    max-height: 900px;
-    min-height: 350px;
+    height: 600px;
   }
 
   /* Start Flickity viewport safeguards V3 */
@@ -118,7 +116,7 @@ const services = [
 <div id="sliderContainer" class="services-carousel h-fit pb-4">
   {
     services.map((item) => (
-      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-2/3">
+      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/5 lg:w-2/5">
           <div id="imgContainer" class="w-full">
             <Picture
                   src={item.imgsrc}
@@ -166,6 +164,7 @@ const services = [
   var flkty = new Flickity( '.services-carousel', {
   cellAlign: 'center',
   contain: true,
+  freeScroll: true,
   imagesLoaded: true,  
   adaptiveHeight: true,
   });
