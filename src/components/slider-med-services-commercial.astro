@@ -172,14 +172,14 @@ const services = [
 <div id="sliderContainer" class="product-carousel h-fit pb-4">
   {
     services.map((item) => (
-      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/5 lg:w-2/5">
+      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-3/4 md:w-3/5 lg:w-2/5">
         <a href={item.btnlink}>
           <div id="imgContainer" class="w-full">
             <Picture
                 src={item.imgsrc}
                 sizes="(max-width: 3600px) 3600px, 2400px, 1200px"
                 widths={[1200, 2400, 3600]}
-                aspectRatio="16:9"
+                aspectRatio="3:2"
                 loading="eager"
                 background="#f2f2f200"
                 fit="cover"
