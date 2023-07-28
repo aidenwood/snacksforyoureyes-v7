@@ -15,6 +15,7 @@ import WeddingCover from '../assets/snacks/weddings/weddings-vertical-1.webp';
 import CommercialCover from '../assets/snacks/commercial/commercial-vertical-1.webp';
 import EventsCover from '../assets/snacks/events/events-vertical-1.webp';
 import PortraitCover from '../assets/snacks/portraits/portraits-vertical-1.webp';
+import EventGallerySlider from "@components/slider-med-services-events.astro";
 import WeddingGallerySlider from "@components/slider-med-services-weddings.astro";
 import CommercialGallerySlider from "@components/slider-med-services-commercial.astro";
 import PortraitGallerySlider from "@components/slider-med-services-portraits.astro";
@@ -53,6 +54,14 @@ import Layout from "@layouts/Layout.astro";
       </Fragment>
     </SectionHeadImg>
 
+    <EventGallerySlider />
+    
+  
+
+  </Container>  
+
+  <Container>  
+
     <SectionHeadImgRev>
       <Fragment slot="title">
         Commercial.
@@ -76,6 +85,11 @@ import Layout from "@layouts/Layout.astro";
 
     <CommercialGallerySlider />
 
+      
+
+  </Container>  
+  
+  <Container>  
 
     <SectionHeadImg>
       <Fragment slot="title">
@@ -100,6 +114,11 @@ import Layout from "@layouts/Layout.astro";
 
     <WeddingGallerySlider />
 
+    
+  
+    </Container>  
+    
+    <Container>  
 
     <SectionHeadImgRev>
       <Fragment slot="title">
