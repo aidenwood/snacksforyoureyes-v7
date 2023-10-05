@@ -17,16 +17,12 @@ const menuitems = [
     path: "/commercial",
   },
   {
-    title: "Weddings",
-    path: "/weddings",
-  },
-  {
     title: "Portaits",
     path: "/portraits",
   },
   {
-    title: "Contact",
-    path: "/contact",
+    title: "Weddings",
+    path: "/weddings",
   },
   
 ];
@@ -61,7 +57,7 @@ const menuitems = [
         </div>
       </div>
       <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-        <ul class="flex flex-col lg:flex-row lg:gap-6">
+        <ul class="flex flex-col lg:flex-row lg:gap-4">
           {
             menuitems.map((item, index) => (
               <>
@@ -77,7 +73,7 @@ const menuitems = [
                   <li>
                     <a
                       href={item.path}
-                      class="flex lg:px-3 py-2 text-xl md:text-2xl text-gray-300 hover:text-gray-100"
+                      class="flex lg:px-3 py-2 text-lg md:text-xl text-gray-300 hover:text-gray-100"
                     >
                       <h2>
                         {item.title}

@@ -45,11 +45,10 @@ const menuitems = [
 <ContainerSticky>
   <header class="flex flex-col lg:flex-row justify-between items-center mb-4 px-2 md:px-6 lg:px-8">
     <Astronav>
-      <div class="flex flex-row w-full lg:w-auto items-center justify-between">
+      <div class="flex w-full lg:w-auto items-center justify-between">
         <a href="/" class="">
-          <img id="navLogo" src={aidxnLogo} alt="Snacks for Your Eyes - Gold Coast Photographer"/>
+          <img id="navLogo" src={aidxnLogo} alt="Aidxn Design - Code by Aiden Wood"/>
         </a>
-        
         <div class="block lg:hidden">
           <MenuIcon class="w-6 h-6 pr-2 text-gray-300" />
         </div>
@@ -68,12 +67,12 @@ const menuitems = [
                 )}
 
                 {!item.children && (
-                  <li class="text-xl md:text-lg">
+                  <li>
                     <a
                       href={item.path}
                       class="flex lg:px-3 py-2 text-gray-300 hover:text-gray-100"
                     >
-                      <h2 class="text-xl md:text-lg">
+                      <h2>
                         {item.title}
                       </h2>
                     </a>
