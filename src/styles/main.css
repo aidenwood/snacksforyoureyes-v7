@@ -6,7 +6,7 @@
   @font-face {
     font-family: 'HelloPlayground';
     font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
-    src: url('/fonts/HelloPlayground.ttf') format('ttf');
+    src: url('/fonts/HelloPlayground.woff2') format('woff2');
     src: url('/fonts/HelloPlayground.ttf') format('truetype');
   }
 }
