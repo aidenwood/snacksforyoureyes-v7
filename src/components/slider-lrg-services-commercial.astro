@@ -131,7 +131,7 @@ const services = [
 
   .carousel-cell {
     margin: 40px 20px;
-    height: 700px;
+    height: 900px;
     max-height: 80vh;
   }
 
@@ -165,7 +165,7 @@ const services = [
   <h2 class="text-2xl md:text-3xl lg:text-5xl font-bold lg:tracking-tight">
     Recent commercial / product photography.
   </h2>
-  <p class="text-lg lg:text-xl max-w-7xl mt-4 text-slate-300">
+  <p class="text-lg lg:text-xl max-w-2xl mt-4 text-slate-300">
     I love to get around events looking for the more human connection to show. Keeping shots to a less invasive angle while still feeling right in the action.
   </p>
 </div>
@@ -173,7 +173,7 @@ const services = [
 <div id="sliderContainer" class="product-carousel h-fit pb-4">
   {
     services.map((item) => (
-      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/4 lg:w-4/5">
+      <div class="carousel-cell flex flex-col xl:flex-row justify-center md:items-center h-fit w-full md:w-3/4 lg:w-3/5">
           <div id="imgContainer" class="w-full">
             <Picture
                   src={item.imgsrc}

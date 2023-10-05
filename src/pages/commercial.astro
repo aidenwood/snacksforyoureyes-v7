@@ -13,9 +13,7 @@ import MoonshotHero from "@components/sectionmid-singleproduct-moonshot.astro";
 import Integrations from "@components/logos-integrations.astro";
 import GallerySlider from "@components/slider-lrg-services-commercial.astro";
 import { Picture } from "@astrojs/image/components";
-import PagecoverHero from '../assets/products-sqr/complete-brand-packages.webp';
-import Pagecover from '../assets/backgrounds/balance.webp';
-import PagecoverSecondary from '../assets/backgrounds/funnel.webp';
+import PagecoverHero from '../assets/snacks/commercial/commercial-1.webp';
 import CoverTextarea from '../assets/backgrounds/cubed.webp';
 import { Icon } from "astro-icon";
 
@@ -94,7 +92,7 @@ const pricing = [
 ];
 ---
 
-<Layout title="Events Photography">
+<Layout title="Commercial Photography">
 
 
 
@@ -104,14 +102,14 @@ const pricing = [
         Gold Coast Commercial and Product Photographer.
       </Fragment>
       <Fragment slot="desc">
-        5+ years experience getting deep in the action. The best perspective. The best angles. The best moments.
+        Capturing spaces and products in the best light possible. Capturing the feeling that comes with using a product or space.
       </Fragment>
       <Fragment slot="cover">
         <Picture
                   src={PagecoverHero}
                   sizes="(max-width: 2000px) 2000px, 1000px"
                   widths={[1000, 1500, 2000]}
-                  aspectRatio="3:2"
+                  aspectRatio="2:3"
                   background="#f2f2f2"
                   fit="cover"
                   position="center"
