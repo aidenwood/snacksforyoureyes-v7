@@ -22,28 +22,37 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
       <h2 class="font-bold text-3xl text-white">
         Empowering Australian Businesses with Faster Applications and Websites.
       </h2>
-      <p class="text-lg leading-relaxed text-slate-300">
-        It all started, after an injury which prohibited Jordan’s ability to walk for 6 months. 
-        Having most of his regular hobbies stripped away and becoming more restricted to his home, 
-        his brother pushed him towards photography by giving him an old camera. 
-        Immediately, the camera gave Jordan a fresh perspective on the place he knew best, 
-        becoming enthused in capturing insects and spiders in his home garden. However, it wasn’t 
-        long after that his subject expanded beyond animal life and became a way for Jordan to
-         connect with people, places and things, during a time where physically this was made difficult. 
-        <br />
-        If a hand-me-down camera could put Jordan’s vision in focus, then, for others he wants to do the 
-        same (to clarify, equipment has been upgraded from the hand-me-down camera). Understanding first-hand 
-        the power of this medium, Jordan strives to produce work that matters, with a positive and 
-        transformational impact on society no matter what scale that be. 
-        <br />
-        Always finding a deep connection to his subject, Jordan is eager to continue working and collaborating 
-        with all kinds of people, capturing all kinds of life. 
-        <br />
-        If your eyes are still hungry, check out Jordan’s portfolio for a snack. It will most definitely leave 
-        them feeling a good kind of full.  
+      <p class="text-lg leading-relaxed text-slate-300 my-4">
+        Welcome to Snacks For Your Eyes Photography, where moments become lasting memories through the lens of Jordan Pavey. 
+        Jordan is not just a photographer but a passionate storyteller who has mastered the art of capturing life's most precious 
+        moments along the stunning Gold Coast. With a keen eye for detail and an unwavering dedication to his craft, Jordan has 
+        established himself as a leading photographer in the region.  
+      </p>
+      <p class="text-lg leading-relaxed text-slate-300 my-4">
+        Born and raised on the picturesque Gold Coast, Jordan has an intimate connection with its diverse landscapes, 
+        from the sun-kissed beaches to the lush hinterland rainforests. This deep appreciation for the natural beauty of 
+        the area is evident in his work, as he effortlessly combines the golden hues of the coast with the vibrant colors of life.  
+      </p>
+      <p class="text-lg leading-relaxed text-slate-300 my-4">
+        At Snacks For Your Eyes Photography, Jordan's goal is not only to take pictures 
+        but to create visual narratives that resonate with his clients. He understands that every moment is unique, and every 
+        individual has a story to tell. Whether it's capturing the joy of a family gathering, the love between a couple, or 
+        the excitement of an event, Jordan's photography goes beyond the ordinary to encapsulate the extraordinary emotions 
+        that define our lives.  
+      </p>
+      <p class="text-lg leading-relaxed text-slate-300 my-4">
+        With years of experience and an innate ability to put his subjects at ease, Jordan Pavey is more than just a photographer; 
+        he's a moment magician, turning life's fleeting instants into timeless treasures. His portfolio is a testament to his versatile 
+        skills, spanning from candid portraits to breathtaking landscapes, each frame infused with his passion for photography.  
+      </p>
+      <p class="text-lg leading-relaxed text-slate-300 my-4">
+        As you explore the world of Snacks For Your Eyes Photography and get to know Jordan, you'll discover a creative and dedicated 
+        artist who strives to make your memories as beautiful as they are memorable. Jordan Pavey invites you to embark on a visual 
+        journey with him, where every click of the shutter brings forth a delectable treat for your eyes, and every photograph tells 
+        a story worth cherishing.
       </p>
     </div>
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-4xl mt-12">
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-4xl mt-12">
       {
         publishedTeamMembers.map((teamMemberEntry) => (
           <div class="group">
@@ -62,10 +71,10 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
+              <h2 class="text-lg text-white">
                 {teamMemberEntry.data.name}
               </h2>
-              <h3 class="text-sm text-slate-500">
+              <h3 class="text-sm text-slate-300">
                 {teamMemberEntry.data.title}
               </h3>
             </div>
